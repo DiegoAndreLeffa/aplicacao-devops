@@ -6,16 +6,16 @@ app.get('/', (req, res) => {
   res.sendFile('views/index.html', { root: __dirname })
 })
 
-data = {
+data 
+
+app.get('/integrantes', (req, res) => {
+  res= {
   'integrantes': [
     { 'nome': 'Diego André' },
     { 'nome': 'Leonardo Giora' },
     { 'nome': 'Maria Egydio' },
   ]
-}
-
-app.get('/integrantes', (req, res) => {
-  res.json(data)
+}.json(data)
 })
 
 app.listen(port, () => {
